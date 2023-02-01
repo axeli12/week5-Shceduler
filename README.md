@@ -20,3 +20,11 @@ WHEN I refresh the page
 THEN the saved events persist
 ```
 
+## Description 
+The point of this app is to have a place to be able to set a work schedule on your own hours that you can set. 
+## link
+
+## Usage
+
+## License 
+None
