@@ -12,22 +12,24 @@ var currentDate = dayjs().format("dddd, MMMM D ");
 currentTime.append(currentDate);
 
 
-// function itTime (){
-// for (let i = 0; i < 8; i++) {
-//   var  times = document.getElementById("tb"+i)
+function itTime (){
+for (let i = 0; i < 8; i++) {
+  var  times = document.getElementById("tb"+i)
 
-//   if (hour < currentHour){
-//     times.classList.add("past")
-//   } 
-//   else if (hour == currentHour){
-//     times.classList.add("present")
-//   }else {
-//     times.classList.add("fututre")
-//   }
+  if (hour < currentHour){
+    times.classList.add("past")
+  } 
+  else if (hour == currentHour){
+    times.classList.add("present")
+  }else {
+    times.classList.add("fututre")
+  }
   
-//   }
+  }
 
-// };
+};
+itTime();
+
 function text(event){
   event.preventDefault();
 
@@ -45,6 +47,6 @@ function text(event){
  
   }
 }
-// itTime();
+
 
 
