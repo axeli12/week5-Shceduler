@@ -27,6 +27,6 @@ The point of this app is to have a place to be able to set a work schedule on yo
 ## Usage
 <img width="1470" alt="Screenshot 2023-02-01 at 8 08 47 PM" src="https://user-images.githubusercontent.com/103465115/216222057-74308818-9e80-41a6-ac8b-1295235d2b98.png">
 
-this shows when the hhpur is in the past
+this shows when the hour is in the past
 ## License 
 None
