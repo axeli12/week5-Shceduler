@@ -15,23 +15,23 @@ currentTime.append(currentDate);
 function itTime (){
 
 
-for (var i = 0; i < 9; i++){
-    var getTime = document.getElementById("#block"+i);    
+  for (var i = 0; i < $(".time-block").length; i++) {
 
-    if (hour < currentHour){
-        getTime.classList.add(".past");
+    let block = $(".time-block")[i];
+  
+    if (parseInt($(block).attr("id").slice(5)) < currentHour) 
+    {
+      $(block).children(".description").addClass("past");
+    } 
+    else if (parseInt($(block).attr("id").slice(5)) > currentHour) 
+    {
+      $(block).children(".description").addClass("future");
+    } 
+    else 
+    {
+      $(block).children(".description").addClass("present");
     }
-
-    else if (hour == currentHour) {
-        getTime.classList.add(".present")
-    }
-
-    else
-        getTime.classList.add(".future");
-
-    hour++;
-}
-
+  }
 };
 itTime();
 
