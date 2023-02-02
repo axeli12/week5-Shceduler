@@ -13,19 +13,27 @@ currentTime.append(currentDate);
 
 
 function itTime (){
-for (let i = 0; i < 8; i++) {
-  var  times = document.getElementById("tb"+i)
+//   for (var z = 0; z < 9; z++){
+//     var till = document.getElementById("#tb"+z);
+//     till.textContent = localStorage.getItem("Eventb"+z);
+// }
 
-  if (hour < currentHour){
-    times.classList.add("past")
-  } 
-  else if (hour == currentHour){
-    times.classList.add("present")
-  }else {
-    times.classList.add("fututre")
-  }
-  
-  }
+for (var i = 0; i < 9; i++){
+    var getTime = document.getElementById("#block"+i);    
+
+    if (hour < currentHour){
+        getTime.classList.add(".past");
+    }
+
+    else if (hour == currentHour) {
+        getTime.classList.add(".present")
+    }
+
+    else
+        getTime.classList.add(".future");
+
+    hour++;
+}
 
 };
 itTime();
@@ -41,7 +49,7 @@ function text(event){
 
   saveBtn.on("click", text)
 
-  for (let i = 9; i <=5; i++){
+  for (let i = 0; i <= 9; i++){
     var data = localStorage.getItem("hour-"+i)
     $("#hour-"+i).children("textarea").val(data)
  
