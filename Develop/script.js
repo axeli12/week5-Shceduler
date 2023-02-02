@@ -13,10 +13,7 @@ currentTime.append(currentDate);
 
 
 function itTime (){
-//   for (var z = 0; z < 9; z++){
-//     var till = document.getElementById("#tb"+z);
-//     till.textContent = localStorage.getItem("Eventb"+z);
-// }
+
 
 for (var i = 0; i < 9; i++){
     var getTime = document.getElementById("#block"+i);    
